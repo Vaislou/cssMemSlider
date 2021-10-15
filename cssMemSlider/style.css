@@ -36,32 +36,44 @@ input {
     display: flex;
     width: 400%;
     height: 100%;
-    transition:margin .4s ease-in-out;
+    transition: margin .3s ease-in-out;
 }
 
 .descr {
-    display: inline;
     margin-right: auto;
+    overflow: hidden;
+}
+
+.descr__wrapper {
+    width: 400%;
+    display: flex;
+    transition: margin .1s ease;
 }
 
 p {
+    display: block;
     color: #FFF;
     font-size: 1em;
+    width: 100%;
 }
 
-#btn1:checked ~ #images .images__wrapper {
+#btn1:checked ~ #images .images__wrapper,
+#btn1:checked ~ #descr .descr__wrapper {
     margin-left: 0;
 }
 
-#btn2:checked ~ #images .images__wrapper {
+#btn2:checked ~ #images .images__wrapper,
+#btn2:checked ~ #descr .descr__wrapper {
     margin-left: -100%;
 }
 
-#btn3:checked ~ #images .images__wrapper {
+#btn3:checked ~ #images .images__wrapper,
+#btn3:checked ~ #descr .descr__wrapper {
     margin-left: -200%;
 }
 
-#btn4:checked ~ #images .images__wrapper {
+#btn4:checked ~ #images .images__wrapper,
+#btn4:checked ~ #descr .descr__wrapper {
     margin-left: -300%;
 }
 
@@ -76,8 +88,8 @@ p {
 	border-radius: 50%;
 	width: 15px;
 	height: 15px;
-	background-color: blue;
-    border: 1px solid blue;
+	background-color: #0000ff;
+    border: 1px solid #0000ff;
     cursor: pointer;
 }
 
