@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 100px auto;
+    width: calc(100vw - 200px);
+    height: 500px;
+    display: grid;
+    background-color: #202325;
+}
