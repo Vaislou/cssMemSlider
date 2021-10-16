@@ -57,7 +57,7 @@ input {
 p {
     display: block;
     color: #FFF;
-    font-size: 1em;
+    font-size: 1.2em;
     width: 100%;
 }
 
@@ -132,7 +132,7 @@ p {
         padding: 1rem;
         width: 90vw;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.1fr 0.3fr;
+        grid-template-rows: 1fr 0.1fr 0.2fr;
         row-gap: 1rem;
     }
 
@@ -151,4 +151,25 @@ p {
         margin: 0 auto;
         grid-row: 2 / 3;
     }
+
+    #buttons label {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+
+    .dot {
+        margin: 0 auto;
+        width: .8rem;
+        height: .8rem;
+        background-color: #72ADFF;
+        border: .1rem solid #72ADFF;
+        border-radius: 50%;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
 }
